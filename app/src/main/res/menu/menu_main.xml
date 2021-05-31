@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:visible="false"
+        android:id="@+id/menu_cerca"
+        android:icon="@drawable/ic_baseline_search"
+        android:iconTint="@android:color/black"
+        android:title="Search"
+        app:showAsAction="always"/>
+    <group
+        android:id="@+id/menu_tendina">
+        <item
+            android:id="@+id/menu_nuovo_gruppo"
+            android:title="Nuovo gruppo"/>
+        <item
+            android:visible="false"
+            android:id="@+id/menu_nuovo_broadcast"
+            android:title="Nuovo broadcast"/>
+        <item
+            android:visible="false"
+            android:id="@+id/menu_messaggi_importanti"
+            android:title="Messaggi importanti"/>
+        <item
+            android:id="@+id/menu_impostazioni"
+            android:title="Impostazioni"/>
+    </group>
+
+</menu>

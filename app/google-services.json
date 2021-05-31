@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "270552962808",
+    "project_id": "blitzy-46695",
+    "storage_bucket": "blitzy-46695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270552962808:android:f93e2ff3ef64c859010d0d",
+        "android_client_info": {
+          "package_name": "itis.arezzo.elaborato_fattorini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270552962808-l3ku83euks6k4aoanh3ldsceal2vdci7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAERVPBeXB_VjyuS1EwnAwXzckg0SM8dAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270552962808-l3ku83euks6k4aoanh3ldsceal2vdci7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

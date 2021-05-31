@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".interfaccia.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Blitzy"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/barra"
+        app:tabGravity="fill"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicator="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/barra">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Tab"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pagina"
+        android:visibility="visible"
+        android:layout_below="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bottone"
+        android:src="@drawable/ic_baseline_chat"
+        android:tint="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>
+
+</layout>
